@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>
+            forms
+        </title>
+    </head>
+    <style>
+        .boy{
+            border-color: wheat;
+            border-width: 2%;
+            border-radius: 15%;
+        }
+        input{
+            background-color: white;
+        }
+    </style>
+   
+    <body>
+    <center>
+    <form name="aayush" class="boy" action="input.php" method="post" style="background-color: black;" >
+    <p>
+        <label for="firstname">
+            First Name: 
+        </label>
+        <input type="text" name="aayushfname" id="firstname" >
+        
+        </p>
+        
+        <p>
+        <label for="last">
+            Last Name: 
+        </label>
+        <input type="text" name="aayushlname" id="lastname" >
+        
+        </p>
+     
+        <p>
+       
+        <p>
+        <label for="roll">
+            Roll No: 
+        </label>
+        <input type="text" name="aayushroll" id="roll" > 
+        
+        </p>
+        <input type="submit" value="Submit">
+
+        
+
+    </form>
+    <form action="retrieve.php">
+            <input type="submit" value="Retrieve data">
+        </form>
+
+    </center>
+    </body>
+  
