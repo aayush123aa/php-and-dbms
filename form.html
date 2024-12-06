@@ -7,7 +7,11 @@
         </title>
     </head>
     <style>
+        *{
+            background-color: black;
+        }
         .boy{
+            color: white;
             border-color: wheat;
             border-width: 2%;
             border-radius: 15%;
@@ -16,43 +20,42 @@
             background-color: white;
         }
     </style>
-   
+
     <body>
     <center>
-    <form name="aayush" class="boy" action="input.php" method="post" style="background-color: black;" >
-    <p>
-        <label for="firstname">
-            First Name: 
-        </label>
-        <input type="text" name="aayushfname" id="firstname" >
+        <form name="aayush" class="boy" action="input.php" method="post" style="background-color: black;" >
+            <p>
+                <label for="firstname">
+                First Name: 
+                </label>
+                <input type="text" name="aayushfname" id="firstname" required>
         
-        </p>
+            </p>
         
-        <p>
-        <label for="last">
-            Last Name: 
-        </label>
-        <input type="text" name="aayushlname" id="lastname" >
+            <p>
+                <label for="last">
+                Last Name: 
+                </label>
+                <input type="text" name="aayushlname" id="lastname" required>
         
-        </p>
+            </p>
      
-        <p>
+           
        
-        <p>
-        <label for="roll">
-            Roll No: 
-        </label>
-        <input type="text" name="aayushroll" id="roll" > 
+            <p>
+                <label for="roll">
+                Roll No: 
+                </label>
+                <input type="text" name="aayushroll" id="roll" > 
         
-        </p>
-        <input type="submit" value="Submit">
+            </p>
+        <input type="submit" value="Submit" style="margin: .5%;" required>
 
         
-
-    </form>
-    <form action="retrieve.php">
-            <input type="submit" value="Retrieve data">
+    
         </form>
+
+        <a href="retrieve.php"> Retrieve Data</a>
 
     </center>
     </body>
